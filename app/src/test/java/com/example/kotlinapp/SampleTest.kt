@@ -11,5 +11,4 @@ class SampleTest {
         val testCountry = "12USA"
         assertEquals(testCountry, "USA")
     }
-
 }
