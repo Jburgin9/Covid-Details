@@ -1,9 +1,11 @@
-package com.example.kotlinapp
+package com.example.kotlinapp.network
 
-import androidx.lifecycle.MutableLiveData
+import com.example.kotlinapp.models.CountriesResponse
+import com.example.kotlinapp.models.StatisticsResponse
 
 class ApiServiceImpl(private val api: ApiService) {
-    suspend fun getResponse(): Response = api.getResponse(getHeadersMap())
+    suspend fun getResponse(): CountriesResponse = api.getResponse(getHeadersMap())
+    suspend fun getStats(): StatisticsResponse = api.getStats(getHeadersMap())
 
     private fun getHeadersMap(): Map<String, String>{
         val headerMap = mutableMapOf<String, String>()

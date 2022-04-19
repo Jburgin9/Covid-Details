@@ -1,6 +1,5 @@
-package com.example.kotlinapp
+package com.example.kotlinapp.network
 
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

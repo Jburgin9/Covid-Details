@@ -1,4 +1,4 @@
-package com.example.kotlinapp
+package com.example.kotlinapp.Utils
 
 enum class Status {
     SUCCESS,

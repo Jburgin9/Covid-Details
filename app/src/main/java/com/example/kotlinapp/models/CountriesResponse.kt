@@ -1,6 +1,6 @@
-package com.example.kotlinapp
+package com.example.kotlinapp.models
 
-data class Response(
+data class CountriesResponse(
     val get: String,
     val results: String,
     val response: List<String>
