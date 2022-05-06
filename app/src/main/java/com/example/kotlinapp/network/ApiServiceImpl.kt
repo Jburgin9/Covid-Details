@@ -3,8 +3,9 @@ package com.example.kotlinapp.network
 import com.example.kotlinapp.models.CountriesResponse
 import com.example.kotlinapp.models.StatisticsResponse
 
-class ApiServiceImpl(private val api: ApiService) {
-    suspend fun getResponse(): CountriesResponse = api.getResponse(getHeadersMap())
+
+class ApiServiceImpl (private val api: ApiService) {
+    suspend fun getResponse(): List<String> = api.getResponse(getHeadersMap()).response
     suspend fun getStats(): StatisticsResponse = api.getStats(getHeadersMap())
 
     private fun getHeadersMap(): Map<String, String>{

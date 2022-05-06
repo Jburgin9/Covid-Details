@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Spinner
+    <androidx.compose.ui.platform.ComposeView
         android:id="@+id/countries_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

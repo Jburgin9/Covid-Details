@@ -8,7 +8,7 @@ import com.example.kotlinapp.network.SudoRepo
 class ViewModelFactory(private val apiServiceImpl: ApiServiceImpl): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if(modelClass.isAssignableFrom(MainViewModel::class.java)){
-            return MainViewModel(SudoRepo(apiServiceImpl)) as T
+            return MainViewModel(apiServiceImpl) as T
         }
         throw IllegalArgumentException ("Unknown class name")
     }
